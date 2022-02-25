@@ -47,10 +47,14 @@ public class VariablesDemo {
 		clear = false;
 		
 		//COMPLEX data types:
+		//STRING
 		
 		String msg = "Hello!";
+		msg = "Hey!!";
+		System.out.println("The value stored in \"String msg\" is: " + msg);
 		
-		//COMPLEX data types of Primitive Types:
+		//COMPLEX data types
+		//Boxed Primitive Types
 		
 		Byte b = 127;
 		b = Byte.valueOf(weight);
@@ -75,8 +79,7 @@ public class VariablesDemo {
 		
 		Boolean bb = true;
 		bb = Boolean.valueOf(clear);
-				
-		
+
 	}
 
 }
