@@ -12,6 +12,8 @@ public class Multiplication {
 		int second = scan.nextInt();
 		int product = first*second;
 		System.out.println("The product of the numbers is: " + product + ".");
+		
+		scan.close();
 	}
 
 }
