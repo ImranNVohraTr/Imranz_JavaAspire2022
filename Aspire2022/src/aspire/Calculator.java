@@ -17,5 +17,4 @@ public class Calculator {
 		
 		System.out.println("The sum of the numbers is:"+sum);
 	}
-
 }
