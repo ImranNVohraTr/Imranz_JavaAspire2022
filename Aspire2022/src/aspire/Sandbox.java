@@ -9,7 +9,6 @@ public class Sandbox{
 		
 		SupCon obj2=new SupCon();
 		obj2.sc=new SubClass2();
-		
 		}
 }
 
