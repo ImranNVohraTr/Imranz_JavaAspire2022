@@ -19,12 +19,12 @@ public class AbstractDemo {
 		else {
 			System.out.println("no this is not a meeting hall...");
 		}
-		accept(hall);
+		temp(hall);
 		accept(new MeetingHall());
 		
 	}
 	
-	static void accept(Hall hall) {
+	static void temp(Hall hall) {
 		System.out.println("party................:"+hall);
 	}
 	
@@ -53,6 +53,6 @@ class PartyHall extends Hall{//party hall is a kind of hall
 }
 class MeetingHall extends Hall{//party hall is a kind of hall
 	public MeetingHall() {
-		System.out.println("party hall cons called....");
+		System.out.println("meeting hall cons called....");
 	}
 }
