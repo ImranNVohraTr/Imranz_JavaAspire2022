@@ -5,7 +5,6 @@ public class Sandbox{
 	public static void main(String argv[]) { 
 		
 		SuperClass obj1=new SubClass1();
-		//obj1.sc=new SubClass2();
 		
 		SupCon obj2=new SupCon();
 		obj2.sc=new SubClass2();

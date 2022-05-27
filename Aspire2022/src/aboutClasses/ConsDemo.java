@@ -9,6 +9,7 @@ public class ConsDemo {
 	
 	ConsDemo(String s, int i){
 		System.out.println("Constructor with string and integer parameter called: "+s+" "+i);
+		this.s=s;
 	}
 	
 	ConsDemo(String s){
@@ -22,7 +23,7 @@ public class ConsDemo {
 		
 		ConsDemo obj2=new ConsDemo("Test");
 		
-		ConsDemo obj3=new ConsDemo("Test2, 4");
+		ConsDemo obj3=new ConsDemo("Test2", 4);
 		
 		System.out.println(obj.s);
 		System.out.println(obj2.s);
