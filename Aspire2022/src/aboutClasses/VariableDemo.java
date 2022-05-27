@@ -12,7 +12,7 @@ public class VariableDemo {
 		vd.pbv(laddu.size);
 		System.out.println("after passing by value...:" + laddu.size);
 		
-		//Pass By Value (pbv)
+		//Pass By Reference (pbr)
 		System.out.println("before passing by reference...:" + laddu.size);
 		vd.pbr(laddu);
 		System.out.println("after passing by reference...:" + laddu.size);
@@ -22,8 +22,9 @@ public class VariableDemo {
 		size=5;
 	}
 	
-	void pbr(Laddu lad) {
+	int pbr(Laddu lad) {
 		lad.size=5;
+		return lad.size;
 	}
 	
 }
