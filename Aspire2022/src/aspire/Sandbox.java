@@ -1,21 +1,30 @@
 /*this is a comment*/
 package aspire;
 
-public class Sandbox {
-	static int i;
-	int age;
-	
-	Sandbox(int age){
-		this.age = age;
-	}
-	Calculator calc = new Calculator();
-	
-	public static void main(String[] args) {
+public class Sandbox{
+	public static void main(String argv[]) { 
 		
-		Sandbox sb = new Sandbox(3);
-				
-		System.out.println(i);
-		System.out.println(sb.age);
+		SuperClass obj1=new SubClass1();
+		//obj1.sc=new SubClass2();
+		
+		SupCon obj2=new SupCon();
+		obj2.sc=new SubClass2();
+		
+		}
+}
+
+class SupCon{
+	SuperClass sc;
+}
+
+class SuperClass{
+	
 	}
+
+class SubClass1 extends SuperClass{
+	
+}
+
+class SubClass2 extends SuperClass{
 	
 }
