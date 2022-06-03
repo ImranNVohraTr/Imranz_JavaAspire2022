@@ -20,11 +20,16 @@ public class AbstractDemo {
 			System.out.println("no this is not a meeting hall...");
 		}
 		temp(hall);
+		accept(new PartyHall());
 		accept(new MeetingHall());
 		
 	}
 	
 	static void temp(Hall hall) {
+		System.out.println("Hall hall................:"+hall);
+	}
+	
+	static void accept(PartyHall hall) {
 		System.out.println("party................:"+hall);
 	}
 	
