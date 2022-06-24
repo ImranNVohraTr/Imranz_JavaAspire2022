@@ -1,28 +1,26 @@
 /*this is a comment*/
 package aspire;
 
-public class Sandbox{
-	public static void main(String argv[]) { 
-		
-		SuperClass obj1=new SubClass1();
-		
-		SupCon obj2=new SupCon();
-		obj2.sc=new SubClass2();
-		}
+class Money{
+	private String country, name; 
+	public getCountry() { return country; }
 }
 
-class SupCon{
-	SuperClass sc;
-}
+class Yen extends Money { 
+	public String getCountry() { 
+		return super.country; 
+		} 
+	} 
 
-class SuperClass{
-	
+class Euro extends Money { 
+	public String getCountry(String timeZone) { 
+		return super.getCountry(); 
+		} 
 	}
 
-class SubClass1 extends SuperClass{
-	
-}
-
-class SubClass2 extends SuperClass{
-	
+public class Sandbox {
+    public static void main(String[ ] args) {
+        Yen y = new Yen();
+        Euro e = new Euro();
+    }
 }
